@@ -42,7 +42,7 @@ return countDown(num-1)
 
 Here the calling of ```countDown(num-1)``` ensures that the argument passed to the function will reduce by 1 each time, until eventually it reaches the base case, at which point the base case's code is executed to exit the recursion.
 
-**3. The Termination Case **
+**3. The Termination Case**
 
 This is a specific specific statement, which will stop the recursion in the event that the input is not capable of being lead to the base case. For example if you called ```countDown(-2)```, the function would not be able to count *down* to zero. Here's a variation of the countDown function, now including a **termination case**:
 
