@@ -84,17 +84,18 @@ function fearNotLetter(str) {
   var result = [], stray = str.split('');
 
   function search(i){
-    if (i === stray.length-1) {
+
+    if (i === stray.length-1) {                                   //base case
       return result;
     }
-    else {
+    else {                                                        //recursive case
       if (stray[i+1].charCodeAt() !== stray[i].charCodeAt()+1) {
       result.push(String.fromCharCode(stray[i].charCodeAt()+1));
     }
       return search(i+1);
     }
   }
-  search(0);
+  search(0);                                                      //iteration call, starting at (i = 0)
 
   return result.join("") || undefined;
 }
