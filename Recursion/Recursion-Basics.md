@@ -2,7 +2,7 @@
 
 The definition of a recursive function is a function that - at some point - calls itself.
 
-**Three Key Ingredients to Recursion:**
+__Three Key Ingredients to Recursion:__
 
   1. The Base Case (required)
   2. The Recursive Case (required)
