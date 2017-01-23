@@ -1,6 +1,6 @@
 ** Basic Recursion **
 
-#### Count Down
+### Count Down
 ```JavaScript
 function countDown(num){
   //optional termination case
@@ -25,7 +25,7 @@ countDown(5)
 */
 ```
 
-#### Addition
+### Addition
 
 Very basic addition function for positive integers.
 
@@ -43,7 +43,7 @@ add(4,3)
 // => 7
 ```
 
-#### Iterating through an string, and converting to an array
+### Iterating through an string, and converting to an array
 
 This requires a parent function, containing a nested recursive function. Its fairly pointless, given the ```.split("")``` method could be used for this. But illustrates the process of iterating through a given input with recursion.
 
