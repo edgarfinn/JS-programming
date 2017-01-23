@@ -71,3 +71,35 @@ convert('abce')
 => [ 'a', 'b', 'c', 'e' ]
 
 ```
+
+### Find The Missing Letter [(Free Code Camp)](https://www.freecodecamp.com/challenges/missing-letters)
+
+This is a recursive solution to the Missing Letters exercise on Free Code Camp. Using the charCodeAt() and charCodeFrom() methods, the function is required to return the missing letter, or ```undefined ``` if the argument passed consists of consecutive letters.
+
+Here ```search()``` if the recursive function.
+
+```JavaScript
+function fearNotLetter(str) {
+
+  var result = [], stray = str.split('');
+
+  function search(i){
+    if (i === stray.length-1) {
+      return result;
+    }
+    else {
+      if (stray[i+1].charCodeAt() !== stray[i].charCodeAt()+1) {
+      result.push(String.fromCharCode(stray[i].charCodeAt()+1));
+    }
+      return search(i+1);
+    }
+  }
+  search(0);
+
+  return result.join("") || undefined;
+}
+
+fearNotLetter("abce");
+
+//=> 'd'
+```
